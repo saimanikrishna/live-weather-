@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humidity Graphs</title>
+    <link rel="stylesheet" href="humidity.css">
+</head>
+<body style="background-image: url('humidity.jpg');">
+    <div class="container">
+        <h1>Humidity Graphs</h1>
+        <div class="dropdown">
+            <select id="yearSelect">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+        </div>
+        <div class="graph-container">
+            <h2>Humidity Line Graph</h2>
+            <canvas id="humidityLineGraph"></canvas>
+        </div>
+        <div class="graph-container">
+            <h2>Humidity Bar Graph</h2>
+            <canvas id="humidityBarGraph"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="humidity.js"></script>
+</body>
+</html>
